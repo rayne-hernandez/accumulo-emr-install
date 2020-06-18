@@ -1,0 +1,103 @@
+/home/hadoop/accumulo/logs/*.log {
+  rotate 0
+  daily
+  missingok
+  notifempty
+  size 10M
+}
+
+/home/hadoop/accumulo/logs/*.log.* {
+  rotate 0
+  daily
+  missingok
+  notifempty
+  size 10M
+}
+
+/home/hadoop/accumulo/logs/*.log-* {
+  rotate 0
+  daily
+  missingok
+  notifempty
+  size 10M
+}
+
+/home/hadoop/accumulo/logs/*.err {
+  rotate 0
+  daily
+  missingok
+  notifempty
+  size 10M
+}
+
+/home/hadoop/accumulo/logs/*.err.* {
+  rotate 0
+  daily
+  missingok
+  notifempty
+  size 10M
+}
+
+/home/hadoop/accumulo/logs/*.err-* {
+  rotate 0
+  daily
+  missingok
+  notifempty
+  size 10M
+}
+
+/home/hadoop/accumulo/logs/*.out {
+  rotate 0
+  daily
+  missingok
+  notifempty
+  size 10M
+}
+
+/home/hadoop/accumulo/logs/*.out.* {
+  rotate 0
+  daily
+  missingok
+  notifempty
+  size 10M
+}
+
+/home/hadoop/accumulo/logs/*.out-* {
+  rotate 0
+  daily
+  missingok
+  notifempty
+  size 10M
+}
+
+/home/hadoop/accumulo/logs/*.audit {
+  rotate 0
+  daily
+  missingok
+  notifempty
+  size 10M
+}
+
+/home/hadoop/accumulo/logs/*.audit.* {
+  rotate 0
+  daily
+  missingok
+  notifempty
+  size 10M
+}
+
+/home/hadoop/accumulo/logs/*.audit-* {
+  rotate 0
+  daily
+  missingok
+  notifempty
+  size 10M
+}
+
+/home/hadoop/*.log {
+  rotate 0
+  daily
+  missingok
+  notifempty
+  size 10M
+}

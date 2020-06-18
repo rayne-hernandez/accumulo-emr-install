@@ -1,0 +1,6 @@
+SHELL=/bin/bash
+PATH=/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin
+
+*/2 * * * * hadoop source /home/hadoop/.bash_profile >> /home/hadoop/accumulo-install.log 2>&1; sh /home/hadoop/accumulo1.9.3-install.sh >> /home/hadoop/accumulo-install.log 2>&1; sh /home/hadoop/presto0.230-install.sh >> /home/hadoop/presto-install.log 2>&1
+0 2 * * * hadoop source /home/hadoop/.bash_profile >> /home/hadoop/accumulo-backup.log 2>&1; sh /home/hadoop/accumulo-backup.sh >> /home/hadoop/accumulo-backup.log 2>&1
+0 0 */1 * * hadoop source /home/hadoop/.bash_profile >> /home/hadoop/accumulo-logrotate.log 2>&1; sudo logrotate -v /etc/logrotate.d/accumulo-logrotate >> /home/hadoop/accumulo-logrotate.log 2>&1
